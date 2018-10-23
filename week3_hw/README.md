@@ -1,7 +1,7 @@
 This homework assignment asks us to analyze a fastq file, calculating the accuracy of each nucleotide that was sequenced & practicing to use python to plot them.
 
 To use the python script:
- - I wrote it to work in python?
+ - I wrote it to work in python2 & 3
  - run & the 1st plot produced should be a histogram of the max's and min's
    - I thought it was pretty interesting that the maximum accuracy for a single nucleotide in every sequence was identical 
    - On the other hand the minimum ended up clustering into 2 distinct groups
