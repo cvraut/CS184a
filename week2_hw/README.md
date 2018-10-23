@@ -5,12 +5,17 @@ I chose the genome sequence for psilocybe cyanescens (magic mushrooms)
 We were to write a python program to read through the fasta file and output how many lines and headers the fasta file has.
 
 We can verify the output of our program is correct by running the following commands to count number of lines:
+
 wc -l <fasta_file_name>
+
 And headers:
+
 grep -c "^>" <fasta_file_name>
 
 I ran my script & got a total of:
+
 599274 lines
+
 3976 headers
 
 To use the python script:
