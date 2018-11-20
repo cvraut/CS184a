@@ -1,0 +1,33 @@
+For this assignment we were to look at the sequenced D. Melanogaster genome from Edwin's paper (http://www.g3journal.org/content/8/10/3143)
+
+
+
+Specifically we were to attempt to recreate the histogram in figure 2 of the results with any of the genomes provided to us.
+
+Then using the array of contigs, we were to recreate the cdf figures from the supplemental figures.
+
+
+
+I used the iso1_onp_a2_1kb_30x_LD0_K25_KCOV2_ADAPT0.01_MINOVL35_RMCHIM1_asm_new_np_pilon_pilon genome as my experimental Data and the reference data was obtained from NIH (ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/215/GCF_000001215.4_Release_6_plus_ISO1_MT/GCF_000001215.4_Release_6_plus_ISO1_MT_genomic.fna.gz)
+
+
+I 1st read these multiline fasta files and converted them to single line "fasta" files using the script called mult2single_line.py.
+The output wasn't exaclty a single line fasta as the script also stripped the headers, but it had the property that each new read was on a new line.
+
+Ex:
+python mult2single_line.py < genome.fasta > genome.fasta1
+
+
+Then I used the single line "fasta" file I generated to generate a list of contig sizes using the gen_contig_cnts.py script.
+This script creates a space seperated string of integers that represent the size of each contig from the file of reads that the previous script generated.
+The way I created the contigs was that I split the read at locations where there were more than 10 consecutive N's as the gap becomes of unknown length.
+
+Ex:
+python gen_contig_cnts < genome.fasta1 > genome.cnts.out
+
+
+Then I ran my data_manip.py script to generate the plots included.
+The cnt files need to be specified in the script.
+
+Ex:
+python data_manip.py
