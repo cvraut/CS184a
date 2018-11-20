@@ -6,7 +6,9 @@ from collections import Counter
 from bisect import bisect
 
 ref_contig_cnts_fname = "cnts.ref.d_melanogaster.contig_cnts.out"
-exp_contig_cnts_fname = "cnts.iso1_onp_a2_1kb_30x_LD0_K25_KCOV2_ADAPT0.01_MINOVL35_RMCHIM1_asm_new_np_pilon_pilon.contig_cnts.out"
+exp_contig_cnts_fname = "cnts.iso1_onp_keep_bn_keep_ngs.contig_cnts.out"
+# don't use, all contigs are small ... "cnts.iso1_onta2_dbg2olc_contigs.contig_cnts.out"
+#"cnts.iso1_onp_a2_1kb_30x_LD0_K25_KCOV2_ADAPT0.01_MINOVL35_RMCHIM1_asm_new_np_pilon_pilon.contig_cnts.out"
 #"cnts.iso1_onp_keep_bn_keep_ngs.contig_cnts.out"
 
 n_bins = 15

@@ -31,3 +31,7 @@ The cnt files need to be specified in the script.
 
 Ex:
 python data_manip.py
+
+
+
+***Note all my graphs have the x axis in a log scale as the distributions were generally exponential
