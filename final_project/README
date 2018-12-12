@@ -1,0 +1,16 @@
+This directory contains the final project for this course.
+
+
+We were to find a PCA study then use their datasets to recreate the study.
+
+
+I chose the study found here: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3447764/ 
+
+About genetic variation between tomatoes and the results of a PCA on the SNP's.
+
+
+All my python code is in the jupyter notebook (*imp. it is a python 2 notebook)
+
+The notebook and the html version of the notebook are too large for github to render, so you would need to download either of them to view in detail what I did & how I did it.
+
+If you don't want to download anything, I have included a 2 page writeup highlighting the important parts of the study and the assignment.
